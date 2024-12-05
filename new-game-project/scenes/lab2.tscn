@@ -1737,7 +1737,7 @@ sources/4 = SubResource("TileSetAtlasSource_b1uir")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qxoxm"]
 distance = 19.0
 
-[node name="game2" type="Node2D"]
+[node name="lab2" type="Node2D"]
 
 [node name="fundo" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_lfqf4")
@@ -1759,6 +1759,7 @@ position = Vector2(-605, -39)
 
 [node name="kill" parent="." instance=ExtResource("7_yelyc")]
 position = Vector2(-1040, 69)
+script = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kill"]
 position = Vector2(7, 2)

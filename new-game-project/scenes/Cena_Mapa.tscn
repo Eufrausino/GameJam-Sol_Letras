@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://drwh8igkcxxti"]
+[gd_scene load_steps=26 format=3 uid="uid://dta1omrq6yisg"]
 
 [ext_resource type="Texture2D" uid="uid://bycnq8ggd4dg3" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/back.png" id="1_5clim"]
 [ext_resource type="Texture2D" uid="uid://dt7uuy216xnhk" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/forest-road-preview.png" id="2_kmwgf"]
@@ -8,7 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://cwxtv1jiews1n" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/cyberpunk-detective-props/PNG/big-computer.png" id="6_dtj3m"]
 [ext_resource type="Texture2D" uid="uid://bypqgs75v5xdo" path="res://assets/Layers/tiledemo.png" id="7_8sytu"]
 [ext_resource type="Texture2D" uid="uid://bki4h23u3lfsa" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/HauntedForest/Layers/tileset.png" id="8_o8g78"]
-[ext_resource type="PackedScene" uid="uid://cvrtl5g4i5da4" path="res://plataforma.tscn" id="9_wdaey"]
+[ext_resource type="PackedScene" uid="uid://cvrtl5g4i5da4" path="res://scenes/plataforma.tscn" id="9_wdaey"]
+[ext_resource type="PackedScene" uid="uid://b0ghj2ncgwmud" path="res://scenes/lyra.tscn" id="10_hh2gd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iam3a"]
 texture = ExtResource("1_5clim")
@@ -2326,3 +2327,6 @@ position = Vector2(314, 310)
 
 [node name="Plataforma4" parent="." instance=ExtResource("9_wdaey")]
 position = Vector2(388, 427)
+
+[node name="Lyra" parent="." instance=ExtResource("10_hh2gd")]
+position = Vector2(-114, -67)
