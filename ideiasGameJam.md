@@ -22,17 +22,44 @@ o cenário não muda no final. Teriamos ambientes uque possuem maquinas e pessoa
 - Um onde as máquinas aceitam mudar o ambiente junto com a natureza e a música, e temos um fim futuristico com maquinas 
 
 # checklist:
-- fluxo de tela
-- formato das fases
+- fluxo de tela - ok, porém tem que pensar se é válido a ideia de fazer o mapa interligado
+- formato das fases - ok
 - numero de fases e ambientação
-- jogo plataforma
-- interação personagem-mundo-npc
-- esquema de luta e batalha
-- esquema de colisão
-- esquema de ação
-- story-telling
-- razão social do jogo (jogo sério, entretenimento)
-- nome do jogo (world symphony)(the world's song)
+- jogo plataforma - ok
+- interação personagem-mundo-npc - mais ou menos
+- esquema de luta e batalha - ok
+- esquema de colisão - ok
+- esquema de ação - usar os instrumentos pra resolver os puzzles
+- story-telling - comecinho
+- razão social do jogo (jogo sério, entretenimento) - entretenimento
+- nome do jogo (world symphony)(the world's song) 
 - seleção de músicas
 - como quebrar a música para ser algo incremental dentro do jogo
 - 
+
+
+# Funcionamento
+
+Personagem: um menina com uma flauta de pã
+
+Ela poderia ter diferentes instrumenotos 
+A raça dos dissonantes acabou chegando na terra e escravizando a população 
+
+cada um absorveu um dos instrumentos primordiais
+
+Ela tem que recuperar 
+
+
+## Recuperação 
+
+Nos checkpoints ela consegue se recuperar
+
+Determinadas plataformas, portas, e etc podem só funcionar com a interação com novos instrumentos 
+
+
+Holograma pra poder ver a história do mapa
+
+1
+
+
+
