@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cdk8gpcsxx2qh"]
+[gd_scene load_steps=14 format=3 uid="uid://cdk8gpcsxx2qh"]
 
 [ext_resource type="Texture2D" uid="uid://dsyl6qbxwsw66" path="res://assets/Layers/tileset-2.png" id="1_n6afs"]
 [ext_resource type="Texture2D" uid="uid://bypqgs75v5xdo" path="res://assets/Layers/tiledemo.png" id="1_rk1td"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b0ghj2ncgwmud" path="res://scenes/lyra.tscn" id="4_mnsni"]
 [ext_resource type="Texture2D" uid="uid://bycnq8ggd4dg3" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/back.png" id="4_n6oby"]
 [ext_resource type="Texture2D" uid="uid://707ondf0gnw3" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/front.png" id="5_a6xhi"]
+[ext_resource type="AudioStream" uid="uid://do7bvs0rk4ivv" path="res://assets/Ashes ｜ God of War OST [xdQeqIWmAbc].mp3" id="7_8sdgb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l30yf"]
 texture = ExtResource("1_n6afs")
@@ -1752,3 +1753,8 @@ layer_0/tile_data = PackedInt32Array(131057, 1703938, 13, 131058, 1769474, 13, 1
 
 [node name="Lyra" parent="." instance=ExtResource("4_mnsni")]
 position = Vector2(-605, -39)
+
+[node name="Musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_8sdgb")
+autoplay = true
+bus = &"Music"
