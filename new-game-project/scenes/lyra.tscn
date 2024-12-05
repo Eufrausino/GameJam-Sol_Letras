@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cleqqq8txrptv"]
+[gd_scene load_steps=22 format=3 uid="uid://b0ghj2ncgwmud"]
 
 [ext_resource type="Script" path="res://scripts/lyra.gd" id="1_ccyjm"]
 [ext_resource type="Texture2D" uid="uid://djvqadv612dnb" path="res://assets/Player Sprite/spritesheets/run.png" id="2_8gjc8"]
