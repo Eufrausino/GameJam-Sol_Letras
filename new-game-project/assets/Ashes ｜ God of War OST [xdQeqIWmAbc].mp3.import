@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://do7bvs0rk4ivv"
+path="res://.godot/imported/Ashes ｜ God of War OST [xdQeqIWmAbc].mp3-cfcd97da1d1ed43e8962a36215994f27.mp3str"
+
+[deps]
+
+source_file="res://assets/Ashes ｜ God of War OST [xdQeqIWmAbc].mp3"
+dest_files=["res://.godot/imported/Ashes ｜ God of War OST [xdQeqIWmAbc].mp3-cfcd97da1d1ed43e8962a36215994f27.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
