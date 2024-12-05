@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cleqqq8txrptv"]
+[gd_scene load_steps=22 format=3 uid="uid://cleqqq8txrptv"]
 
 [ext_resource type="Texture2D" uid="uid://qnx6un4uybe1" path="res://assets/Player Sprite/spritesheets/fall.png" id="1_5g7p0"]
 [ext_resource type="Script" path="res://scripts/lyra.gd" id="1_ccyjm"]
@@ -130,9 +130,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8wki"]
-size = Vector2(706, 233)
-
 [node name="Lyra" type="CharacterBody2D"]
 script = ExtResource("1_ccyjm")
 
@@ -148,6 +145,5 @@ frame_progress = 0.415499
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(1, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-33, 142.5)
-shape = SubResource("RectangleShape2D_i8wki")
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.54, 2.54)
