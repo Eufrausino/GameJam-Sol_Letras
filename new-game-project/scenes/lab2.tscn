@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cdk8gpcsxx2qh"]
+[gd_scene load_steps=15 format=3 uid="uid://cdk8gpcsxx2qh"]
 
 [ext_resource type="Texture2D" uid="uid://dsyl6qbxwsw66" path="res://assets/Layers/tileset-2.png" id="1_n6afs"]
 [ext_resource type="Texture2D" uid="uid://bypqgs75v5xdo" path="res://assets/Layers/tiledemo.png" id="1_rk1td"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b0ghj2ncgwmud" path="res://scenes/lyra.tscn" id="4_mnsni"]
 [ext_resource type="Texture2D" uid="uid://bycnq8ggd4dg3" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/back.png" id="4_n6oby"]
 [ext_resource type="Texture2D" uid="uid://707ondf0gnw3" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/front.png" id="5_a6xhi"]
+[ext_resource type="PackedScene" uid="uid://bhy37wdelsetk" path="res://scenes/kill.tscn" id="7_yelyc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l30yf"]
 texture = ExtResource("1_n6afs")
@@ -1733,6 +1734,9 @@ sources/1 = SubResource("TileSetAtlasSource_33xdb")
 sources/3 = SubResource("TileSetAtlasSource_xtqpx")
 sources/4 = SubResource("TileSetAtlasSource_b1uir")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qxoxm"]
+distance = 19.0
+
 [node name="game2" type="Node2D"]
 
 [node name="fundo" type="TileMap" parent="."]
@@ -1752,3 +1756,10 @@ layer_0/tile_data = PackedInt32Array(131057, 1703938, 13, 131058, 1769474, 13, 1
 
 [node name="Lyra" parent="." instance=ExtResource("4_mnsni")]
 position = Vector2(-605, -39)
+
+[node name="kill" parent="." instance=ExtResource("7_yelyc")]
+position = Vector2(-1040, 69)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill"]
+position = Vector2(7, 2)
+shape = SubResource("WorldBoundaryShape2D_qxoxm")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhy37wdelsetk"]
+
+[ext_resource type="Script" path="res://scenes/kill.gd" id="1_phuk3"]
+
+[node name="kill" type="Area2D"]
+script = ExtResource("1_phuk3")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
