@@ -1,25 +1,22 @@
 [gd_scene load_steps=22 format=3 uid="uid://cleqqq8txrptv"]
 
-[ext_resource type="Texture2D" uid="uid://qnx6un4uybe1" path="res://assets/Player Sprite/spritesheets/fall.png" id="1_5g7p0"]
 [ext_resource type="Script" path="res://scripts/lyra.gd" id="1_ccyjm"]
 [ext_resource type="Texture2D" uid="uid://djvqadv612dnb" path="res://assets/Player Sprite/spritesheets/run.png" id="2_8gjc8"]
+[ext_resource type="Texture2D" uid="uid://bt3ci4s4htphv" path="res://assets/Player Sprite/Sprites/fall/fall1.png" id="2_wwgbw"]
+[ext_resource type="Texture2D" uid="uid://c5ayktq0l77av" path="res://assets/Player Sprite/Sprites/fall/fall2.png" id="3_e8v7e"]
 [ext_resource type="Texture2D" uid="uid://clf8ency4g8mp" path="res://assets/Player Sprite/spritesheets/hurt.png" id="3_rfq0h"]
 [ext_resource type="Texture2D" uid="uid://ugdu2nm4ylmo" path="res://assets/Player Sprite/spritesheets/idle.png" id="4_d70ij"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ugi5e"]
 size = Vector2(26, 46)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4kflf"]
-atlas = ExtResource("1_5g7p0")
-region = Rect2(0, 72, 128, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dq23"]
+atlas = ExtResource("2_wwgbw")
+region = Rect2(0, 0, 128, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1cyu4"]
-atlas = ExtResource("1_5g7p0")
-region = Rect2(0, 48, 128, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jksrs"]
-atlas = ExtResource("1_5g7p0")
-region = Rect2(0, 24, 128, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_5n2hx"]
+atlas = ExtResource("3_e8v7e")
+region = Rect2(0, 0, 128, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3hx1s"]
 atlas = ExtResource("2_8gjc8")
@@ -69,13 +66,10 @@ region = Rect2(384, 48, 128, 48)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4kflf")
+"texture": SubResource("AtlasTexture_2dq23")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1cyu4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jksrs")
+"texture": SubResource("AtlasTexture_5n2hx")
 }],
 "loop": true,
 "name": &"cair",
@@ -138,9 +132,11 @@ position = Vector2(-3, 3)
 shape = SubResource("RectangleShape2D_ugi5e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 4)
+scale = Vector2(1, 0.958333)
 sprite_frames = SubResource("SpriteFrames_430l0")
 animation = &"parada"
-frame_progress = 0.415499
+frame_progress = 0.0727317
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(1, 1)
