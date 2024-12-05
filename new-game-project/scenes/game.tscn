@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bpt76qvv6lgfw"]
+[gd_scene load_steps=5 format=3 uid="uid://bat6fam78e2jh"]
 
 [ext_resource type="Texture2D" uid="uid://bypqgs75v5xdo" path="res://assets/Layers/tiledemo.png" id="1_o4mdx"]
 [ext_resource type="PackedScene" uid="uid://b0ghj2ncgwmud" path="res://scenes/lyra.tscn" id="2_h4lvb"]

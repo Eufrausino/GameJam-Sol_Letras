@@ -1,13 +1,13 @@
 [gd_scene load_steps=2 format=3 uid="uid://chtecq04r0xv"]
 
-[ext_resource type="Script" path="res://scenes/kill.gd" id="1_phuk3"]
+[ext_resource type="Script" path="res://scripts/kill.gd" id="1_phuk3"]
 
 [node name="kill" type="Area2D"]
 position = Vector2(1, 0)
 script = ExtResource("1_phuk3")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.419
+wait_time = 0.2
 one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
