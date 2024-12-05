@@ -143,3 +143,4 @@ position = Vector2(1, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.54, 2.54)
+limit_bottom = 250

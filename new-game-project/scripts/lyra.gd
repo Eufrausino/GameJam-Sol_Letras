@@ -44,3 +44,7 @@ func _physics_process(delta: float) -> void:
 
 	# Aplicar movimento
 	move_and_slide()
+
+
+func _on_change_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
