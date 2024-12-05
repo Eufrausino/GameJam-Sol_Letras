@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://0rj0d4e437dv"]
+
+[ext_resource type="Texture2D" uid="uid://ugdu2nm4ylmo" path="res://assets/Player Sprite/spritesheets/idle.png" id="1_8qi68"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbjl5"]
+atlas = ExtResource("1_8qi68")
+region = Rect2(41, 43, 110, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wrgl"]
+atlas = ExtResource("1_8qi68")
+region = Rect2(151, 43, 110, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsmyl"]
+atlas = ExtResource("1_8qi68")
+region = Rect2(261, 43, 110, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rhj2t"]
+atlas = ExtResource("1_8qi68")
+region = Rect2(371, 43, 110, 53)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d8bk5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbjl5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wrgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xsmyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rhj2t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_d8bk5")

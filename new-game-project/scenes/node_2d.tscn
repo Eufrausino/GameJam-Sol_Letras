@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://drwh8igkcxxti"]
+[gd_scene load_steps=2 format=3 uid="uid://drwh8igkcxxti"]
+
+[ext_resource type="Texture2D" uid="uid://fyi04u6wgtlg" path="res://assets/pixel-art-illustration-flute-pixelated-flute-flute-music-instrument-pixelated-game_1038602-1304.svg" id="1_huan3"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Pixel-art-illustration-flute-pixelated-flute-flute-music-instrument-pixelated-game1038602-1304" type="Sprite2D" parent="."]
+position = Vector2(7, -15)
+texture = ExtResource("1_huan3")
