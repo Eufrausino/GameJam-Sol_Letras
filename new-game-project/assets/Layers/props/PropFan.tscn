@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Levels/Layers/props/Fan/fan1.png" type="Texture" id=1]
+[ext_resource path="res://Levels/Layers/props/Fan/fan2.png" type="Texture" id=2]
+[ext_resource path="res://Levels/Layers/props/PropFan.gd" type="Script" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 21, 21 )
+
+[node name="PropFan" type="AnimatedSprite"]
+position = Vector2( 40, 40 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+script = ExtResource( 3 )
+
+[node name="HurtBox" type="Area2D" parent="."]
+collision_layer = 128
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2( 0, 8 )
+shape = SubResource( 2 )

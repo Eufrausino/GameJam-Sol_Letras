@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://4wxa6tfuk2dj"
+path="res://.godot/imported/jump.wav-20185ccc9b2950944d2c1fa4b3d5e567.sample"
+
+[deps]
+
+source_file="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Packs/grotto_escape_pack/Base pack/sounds/jump.wav"
+dest_files=["res://.godot/imported/jump.wav-20185ccc9b2950944d2c1fa4b3d5e567.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
