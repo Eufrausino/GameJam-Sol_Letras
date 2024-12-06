@@ -7,10 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://bycnq8ggd4dg3" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/back.png" id="4_n6oby"]
 [ext_resource type="Texture2D" uid="uid://707ondf0gnw3" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/front.png" id="5_a6xhi"]
 [ext_resource type="AudioStream" uid="uid://do7bvs0rk4ivv" path="res://assets/Ashes ｜ God of War OST [xdQeqIWmAbc].mp3" id="7_8sdgb"]
-[ext_resource type="PackedScene" uid="uid://chtecq04r0xv" path="res://scenes/kill.tscn" id="8_7t6fo"]
-[ext_resource type="PackedScene" uid="uid://b2lscum44hn2f" path="res://scenes/change.tscn" id="9_xsmmo"]
-[ext_resource type="Script" path="res://scenes/change.gd" id="10_4trte"]
-[ext_resource type="Script" path="res://scenes/change2.gd" id="11_eqf8a"]
+[ext_resource type="PackedScene" uid="uid://chtecq04r0xv" path="res://scenes/outros/kill.tscn" id="8_7t6fo"]
+[ext_resource type="PackedScene" uid="uid://b2lscum44hn2f" path="res://scenes/outros/change.tscn" id="9_xsmmo"]
+[ext_resource type="Script" path="res://scripts/change.gd" id="10_4trte"]
+[ext_resource type="Script" path="res://scripts/change2.gd" id="11_eqf8a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l30yf"]
 texture = ExtResource("1_n6afs")
