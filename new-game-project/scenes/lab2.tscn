@@ -9,7 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://do7bvs0rk4ivv" path="res://assets/Ashes ｜ God of War OST [xdQeqIWmAbc].mp3" id="7_8sdgb"]
 [ext_resource type="PackedScene" uid="uid://chtecq04r0xv" path="res://scenes/outros/kill.tscn" id="8_7t6fo"]
 [ext_resource type="PackedScene" uid="uid://b2lscum44hn2f" path="res://scenes/outros/change.tscn" id="9_xsmmo"]
-[ext_resource type="Script" path="res://scripts/change.gd" id="10_4trte"]
+[ext_resource type="Script" path="res://scenes/outros/changeDirLab.gd" id="10_p7jj2"]
 [ext_resource type="Script" path="res://scripts/change2.gd" id="11_eqf8a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l30yf"]
@@ -1780,13 +1780,13 @@ shape = SubResource("WorldBoundaryShape2D_rpnr7")
 
 [node name="changeDir" parent="." instance=ExtResource("9_xsmmo")]
 position = Vector2(1812, 23)
-script = ExtResource("10_4trte")
+script = ExtResource("10_p7jj2")
 
-[node name="changeLef" parent="." instance=ExtResource("9_xsmmo")]
+[node name="changeLef2" parent="." instance=ExtResource("9_xsmmo")]
 position = Vector2(-62, 19)
 script = ExtResource("11_eqf8a")
 
 [connection signal="body_entered" from="changeDir" to="Lyra" method="_on_change_body_entered"]
 [connection signal="body_entered" from="changeDir" to="changeDir" method="_on_body_entered"]
-[connection signal="body_entered" from="changeLef" to="Lyra" method="_on_change_body_entered"]
-[connection signal="body_entered" from="changeLef" to="changeLef" method="_on_body_entered"]
+[connection signal="body_entered" from="changeLef2" to="Lyra" method="_on_change_body_entered"]
+[connection signal="body_entered" from="changeLef2" to="changeLef2" method="_on_body_entered"]

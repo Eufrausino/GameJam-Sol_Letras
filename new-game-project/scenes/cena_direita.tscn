@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cvrtl5g4i5da4" path="res://scenes/outros/plataforma.tscn" id="9_wdaey"]
 [ext_resource type="PackedScene" uid="uid://b0ghj2ncgwmud" path="res://scenes/lyra.tscn" id="10_c8y1g"]
 [ext_resource type="PackedScene" uid="uid://b2lscum44hn2f" path="res://scenes/outros/change.tscn" id="11_6tl3g"]
-[ext_resource type="Script" path="res://scripts/change.gd" id="12_uefma"]
+[ext_resource type="Script" path="res://scripts/changeLef.gd" id="12_uo7pq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iam3a"]
 texture = ExtResource("1_5clim")
@@ -2637,6 +2637,6 @@ position = Vector2(-63, -54)
 
 [node name="changeLef" parent="." instance=ExtResource("11_6tl3g")]
 position = Vector2(-231, -105)
-script = ExtResource("12_uefma")
+script = ExtResource("12_uo7pq")
 
 [connection signal="body_entered" from="changeLef" to="changeLef" method="_on_body_entered"]
