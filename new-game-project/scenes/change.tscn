@@ -1,12 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2lscum44hn2f"]
-
-[ext_resource type="Script" path="res://changeScene.gd" id="1_vnisb"]
+[gd_scene load_steps=2 format=3 uid="uid://b2lscum44hn2f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ps3bi"]
 size = Vector2(28, 210)
 
 [node name="change" type="Area2D"]
-script = ExtResource("1_vnisb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, 4)
