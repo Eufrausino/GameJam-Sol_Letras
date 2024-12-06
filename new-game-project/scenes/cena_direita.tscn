@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://drwh8igkcxxti"]
+[gd_scene load_steps=44 format=3 uid="uid://drwh8igkcxxti"]
 
 [ext_resource type="Texture2D" uid="uid://bycnq8ggd4dg3" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/back.png" id="1_5clim"]
 [ext_resource type="Texture2D" uid="uid://dt7uuy216xnhk" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/forest-road-background/PNG/forest-road-preview.png" id="2_kmwgf"]
@@ -8,10 +8,14 @@
 [ext_resource type="Texture2D" uid="uid://cwxtv1jiews1n" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/cyberpunk-detective-props/PNG/big-computer.png" id="6_dtj3m"]
 [ext_resource type="Texture2D" uid="uid://bypqgs75v5xdo" path="res://assets/Layers/tiledemo.png" id="7_8sytu"]
 [ext_resource type="Texture2D" uid="uid://bki4h23u3lfsa" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/HauntedForest/Layers/tileset.png" id="8_o8g78"]
+[ext_resource type="Texture2D" uid="uid://cau1bbfd06rh7" path="res://assets/pixil-frame-1.png" id="9_735ke"]
 [ext_resource type="PackedScene" uid="uid://cvrtl5g4i5da4" path="res://scenes/outros/plataforma.tscn" id="9_wdaey"]
 [ext_resource type="PackedScene" uid="uid://b0ghj2ncgwmud" path="res://scenes/lyra.tscn" id="10_c8y1g"]
+[ext_resource type="Texture2D" uid="uid://bkhqht42nirj2" path="res://assets/pixil-frame-3.png" id="10_uqrk4"]
+[ext_resource type="Texture2D" uid="uid://b5jfgaun1xy7w" path="res://assets/pixil-frame-4.png" id="11_1m4w8"]
 [ext_resource type="PackedScene" uid="uid://b2lscum44hn2f" path="res://scenes/outros/change.tscn" id="11_6tl3g"]
 [ext_resource type="Script" path="res://scripts/changeLef.gd" id="12_uo7pq"]
+[ext_resource type="Script" path="res://scenes/outros/changeBoss.gd" id="13_7d2cp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iam3a"]
 texture = ExtResource("1_5clim")
@@ -2463,12 +2467,193 @@ texture = ExtResource("1_5clim")
 3:13/0 = 0
 4:13/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_el8p7"]
+texture = ExtResource("9_735ke")
+texture_region_size = Vector2i(32, 32)
+1:2/0 = 0
+2:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+0:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+0:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+2:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+4:19/0 = 0
+2:21/0 = 0
+3:21/0 = 0
+0:22/0 = 0
+1:22/0 = 0
+2:22/0 = 0
+3:22/0 = 0
+4:22/0 = 0
+5:22/0 = 0
+0:23/0 = 0
+2:23/0 = 0
+3:23/0 = 0
+1:10/0 = 0
+2:7/0 = 0
+2:6/0 = 0
+0:8/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45tam"]
+texture = ExtResource("10_uqrk4")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+3:3/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+4:9/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+4:10/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+2:21/0 = 0
+3:21/0 = 0
+0:22/0 = 0
+1:22/0 = 0
+2:22/0 = 0
+3:22/0 = 0
+4:22/0 = 0
+5:22/0 = 0
+0:23/0 = 0
+2:23/0 = 0
+3:23/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qp5mb"]
+texture = ExtResource("11_1m4w8")
+1:12/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+0:16/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_pdehe"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_rja30")
 sources/0 = SubResource("TileSetAtlasSource_g247y")
 sources/1 = SubResource("TileSetAtlasSource_0wq76")
 sources/2 = SubResource("TileSetAtlasSource_ljfuv")
+sources/3 = SubResource("TileSetAtlasSource_el8p7")
+sources/4 = SubResource("TileSetAtlasSource_45tam")
+sources/5 = SubResource("TileSetAtlasSource_qp5mb")
 
 [sub_resource type="Animation" id="Animation_4smdt"]
 length = 0.001
@@ -2633,10 +2818,15 @@ libraries = {
 autoplay = "move3"
 
 [node name="Lyra" parent="." instance=ExtResource("10_c8y1g")]
-position = Vector2(-63, -54)
+position = Vector2(-79, -36)
 
 [node name="changeLef" parent="." instance=ExtResource("11_6tl3g")]
 position = Vector2(-231, -105)
 script = ExtResource("12_uo7pq")
 
+[node name="changeBoss" parent="." instance=ExtResource("11_6tl3g")]
+position = Vector2(718, 511)
+script = ExtResource("13_7d2cp")
+
 [connection signal="body_entered" from="changeLef" to="changeLef" method="_on_body_entered"]
+[connection signal="body_entered" from="changeBoss" to="changeBoss" method="_on_body_entered"]
