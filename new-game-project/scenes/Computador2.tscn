@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://5mwq7tky0md2"]
+
+[ext_resource type="Texture2D" uid="uid://b7dy1tovk5k00" path="res://assets/pc_gamers/image.psd.svg" id="1_1xxei"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i7cgo"]
+size = Vector2(151, 135)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
+texture = ExtResource("1_1xxei")
+region_enabled = true
+region_rect = Rect2(308, 531, 154.627, 139.087)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(-0.5, -2.5)
+shape = SubResource("RectangleShape2D_i7cgo")

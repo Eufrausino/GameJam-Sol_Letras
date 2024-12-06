@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var speed: float = 400.0  # Velocidade de movimento horizontal
 @export var jump_force: float = 400.0  # Força do pulo
 @export var gravity: float = 900.0  # Gravidade aplicada ao personagem
+@export var venceu: bool = true  # Gravidade aplicada ao personagem
 
 # Variáveis internas
 var animated_sprite: AnimatedSprite2D
