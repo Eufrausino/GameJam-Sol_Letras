@@ -1551,9 +1551,9 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_i3u3c")
 sources/0 = SubResource("TileSetAtlasSource_lk8fa")
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ugis0"]
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_i0q8h"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tpvsn"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w1ejm"]
 texture = ExtResource("7_bndoo")
 25:4/0 = 0
 26:4/0 = 0
@@ -2054,7 +2054,7 @@ texture = ExtResource("7_bndoo")
 48:7/0 = 0
 49:7/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hdy5v"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wlxej"]
 texture = ExtResource("8_0tpk6")
 0:0/0 = 0
 1:0/0 = 0
@@ -2388,7 +2388,7 @@ texture = ExtResource("8_0tpk6")
 31:9/0 = 0
 31:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vj571"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4k8xa"]
 texture = ExtResource("1_kk8yj")
 0:0/0 = 0
 1:0/0 = 0
@@ -2463,10 +2463,10 @@ texture = ExtResource("1_kk8yj")
 
 [sub_resource type="TileSet" id="TileSet_pdehe"]
 physics_layer_0/collision_layer = 1
-physics_layer_0/physics_material = SubResource("PhysicsMaterial_ugis0")
-sources/0 = SubResource("TileSetAtlasSource_tpvsn")
-sources/1 = SubResource("TileSetAtlasSource_hdy5v")
-sources/2 = SubResource("TileSetAtlasSource_vj571")
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_i0q8h")
+sources/0 = SubResource("TileSetAtlasSource_w1ejm")
+sources/1 = SubResource("TileSetAtlasSource_wlxej")
+sources/2 = SubResource("TileSetAtlasSource_4k8xa")
 
 [sub_resource type="Animation" id="Animation_4smdt"]
 length = 0.001

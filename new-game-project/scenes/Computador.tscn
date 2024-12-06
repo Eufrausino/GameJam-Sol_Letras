@@ -1,19 +1,17 @@
 [gd_scene load_steps=3 format=3 uid="uid://baa17xt6xqwtf"]
 
-[ext_resource type="Texture2D" uid="uid://b7dy1tovk5k00" path="res://assets/pc_gamers/image.psd.svg" id="1_nur28"]
+[ext_resource type="Texture2D" uid="uid://neamqp7e3rv6" path="res://assets/pixil-frame-pc.png" id="1_v0fnn"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_i7cgo"]
-size = Vector2(147, 134)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ok6qv"]
+size = Vector2(28, 21)
 
-[node name="Computador_Node" type="Node2D"]
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
 
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
-texture = ExtResource("1_nur28")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_v0fnn")
 region_enabled = true
-region_rect = Rect2(308, 531, 154.627, 139.087)
+region_rect = Rect2(6.47422, 241.806, 27.7755, 25.1064)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
-position = Vector2(-2.5, -2)
-shape = SubResource("RectangleShape2D_i7cgo")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_ok6qv")
