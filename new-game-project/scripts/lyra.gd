@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Configurações de movimento
-@export var speed: float = 200.0  # Velocidade de movimento horizontal
+@export var speed: float = 400.0  # Velocidade de movimento horizontal
 @export var jump_force: float = 400.0  # Força do pulo
 @export var gravity: float = 900.0  # Gravidade aplicada ao personagem
 
