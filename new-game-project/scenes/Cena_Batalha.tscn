@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://cdvdm5ggn1f64"]
+[gd_scene load_steps=42 format=3 uid="uid://cdvdm5ggn1f64"]
 
 [ext_resource type="Texture2D" uid="uid://dvwng6ckto7vi" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/Old-dark-Castle-tileset-Files/PNG/old-dark-castle-interior-background.png" id="1_wi8jd"]
 [ext_resource type="Texture2D" uid="uid://5fnl76bojano" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/cyberpunk-corridor-files/cyberpunk-corridor-PREVIEW.png" id="2_30fjj"]
@@ -2619,6 +2619,7 @@ _data = {
 
 [sub_resource type="Animation" id="Animation_yflhr"]
 resource_name = "move3"
+length = 0.5
 loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -2627,10 +2628,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0, 0.466667),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": []
+"values": [Vector2(630, 440), Vector2(630, 586)]
 }
 
 [sub_resource type="Animation" id="Animation_7vovg"]
@@ -2652,6 +2653,43 @@ tracks/0/keys = {
 _data = {
 "RESET": SubResource("Animation_7vovg"),
 "move3": SubResource("Animation_yflhr")
+}
+
+[sub_resource type="Animation" id="Animation_vpc1k"]
+resource_name = "move4"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(230, 403), Vector2(447, 403), Vector2(447, 594)]
+}
+
+[sub_resource type="Animation" id="Animation_7qegk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(230, 403)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ku16p"]
+_data = {
+"RESET": SubResource("Animation_7qegk"),
+"move4": SubResource("Animation_vpc1k")
 }
 
 [node name="Node_Batalha" type="Node2D"]
@@ -2723,6 +2761,15 @@ libraries = {
 "": SubResource("AnimationLibrary_ll78e")
 }
 autoplay = "move3"
+
+[node name="AnimatableBody2D4" parent="." instance=ExtResource("7_viuax")]
+position = Vector2(230, 403)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D4"]
+libraries = {
+"": SubResource("AnimationLibrary_ku16p")
+}
+autoplay = "move4"
 
 [node name="Lyra" parent="." instance=ExtResource("4_32xww")]
 position = Vector2(-185, 545)
