@@ -8,10 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://cwxtv1jiews1n" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/cyberpunk-detective-props/PNG/big-computer.png" id="6_wbtbd"]
 [ext_resource type="Texture2D" uid="uid://bypqgs75v5xdo" path="res://assets/Layers/tiledemo.png" id="7_8ki2s"]
 [ext_resource type="Texture2D" uid="uid://bki4h23u3lfsa" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/HauntedForest/Layers/tileset.png" id="8_qfpv3"]
-[ext_resource type="PackedScene" uid="uid://cvrtl5g4i5da4" path="res://scenes/plataforma.tscn" id="9_ownmp"]
+[ext_resource type="PackedScene" uid="uid://cvrtl5g4i5da4" path="res://scenes/outros/plataforma.tscn" id="9_ownmp"]
 [ext_resource type="PackedScene" uid="uid://b0ghj2ncgwmud" path="res://scenes/lyra.tscn" id="10_br7v1"]
 [ext_resource type="PackedScene" uid="uid://b2lscum44hn2f" path="res://scenes/outros/change.tscn" id="11_i8jx0"]
-[ext_resource type="Script" path="res://scripts/change.gd" id="12_4gun5"]
+[ext_resource type="Script" path="res://scripts/changeLef.gd" id="12_il26q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iam3a"]
 texture = ExtResource("1_stai5")
@@ -2490,11 +2490,11 @@ position = Vector2(-190, -29)
 
 [node name="change2" parent="." instance=ExtResource("11_i8jx0")]
 position = Vector2(703, -160)
-script = ExtResource("12_4gun5")
+script = ExtResource("12_il26q")
 
 [node name="change3" parent="." instance=ExtResource("11_i8jx0")]
 position = Vector2(-235, -93)
-script = ExtResource("12_4gun5")
+script = ExtResource("12_il26q")
 
 [connection signal="body_entered" from="change2" to="change2" method="_on_body_entered"]
 [connection signal="body_entered" from="change3" to="change3" method="_on_body_entered"]
