@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cwxtv1jiews1n" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/cyberpunk-detective-props/PNG/big-computer.png" id="6_dtj3m"]
 [ext_resource type="Texture2D" uid="uid://bypqgs75v5xdo" path="res://assets/Layers/tiledemo.png" id="7_8sytu"]
 [ext_resource type="Texture2D" uid="uid://bki4h23u3lfsa" path="res://assets/zorza/Legacy Collection/Legacy Collection/Assets/Environments/HauntedForest/Layers/tileset.png" id="8_o8g78"]
-[ext_resource type="PackedScene" uid="uid://cvrtl5g4i5da4" path="res://scenes/plataforma.tscn" id="9_wdaey"]
+[ext_resource type="PackedScene" uid="uid://cvrtl5g4i5da4" path="res://scenes/outros/plataforma.tscn" id="9_wdaey"]
 [ext_resource type="PackedScene" uid="uid://b0ghj2ncgwmud" path="res://scenes/lyra.tscn" id="10_c8y1g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iam3a"]

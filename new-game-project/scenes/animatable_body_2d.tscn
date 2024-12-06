@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://ctmlcktscus34"]
-
-[node name="AnimatableBody2D" type="AnimatableBody2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]

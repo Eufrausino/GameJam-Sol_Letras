@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://rbi4o3c6ecvs"]
+
+[ext_resource type="Script" path="res://scenes/outros/nota_3.gd" id="1_ej3am"]
+[ext_resource type="Texture2D" uid="uid://bg3v4me8xbfq7" path="res://assets/pixil-frame-0.png" id="1_f7r2t"]
+
+[node name="nota1" type="AnimatableBody2D"]
+script = ExtResource("1_ej3am")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 12)
+texture = ExtResource("1_f7r2t")
+region_enabled = true
+region_rect = Rect2(4.78667, 140.646, 85.5205, 53.2751)
