@@ -1778,15 +1778,15 @@ position = Vector2(-277, 300)
 position = Vector2(-6, 39)
 shape = SubResource("WorldBoundaryShape2D_rpnr7")
 
-[node name="change2" parent="." instance=ExtResource("9_xsmmo")]
+[node name="changeDir" parent="." instance=ExtResource("9_xsmmo")]
 position = Vector2(1812, 23)
 script = ExtResource("10_4trte")
 
-[node name="change" parent="." instance=ExtResource("9_xsmmo")]
-position = Vector2(-62, 20)
+[node name="changeLef" parent="." instance=ExtResource("9_xsmmo")]
+position = Vector2(-62, 19)
 script = ExtResource("11_eqf8a")
 
-[connection signal="body_entered" from="change2" to="Lyra" method="_on_change_body_entered"]
-[connection signal="body_entered" from="change2" to="change2" method="_on_body_entered"]
-[connection signal="body_entered" from="change" to="Lyra" method="_on_change_body_entered"]
-[connection signal="body_entered" from="change" to="change" method="_on_body_entered"]
+[connection signal="body_entered" from="changeDir" to="Lyra" method="_on_change_body_entered"]
+[connection signal="body_entered" from="changeDir" to="changeDir" method="_on_body_entered"]
+[connection signal="body_entered" from="changeLef" to="Lyra" method="_on_change_body_entered"]
+[connection signal="body_entered" from="changeLef" to="changeLef" method="_on_body_entered"]
