@@ -1,19 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmu43rnlq65ql"]
+[gd_scene load_steps=3 format=3 uid="uid://baa17xt6xqwtf"]
 
-[ext_resource type="Texture2D" uid="uid://b5jfgaun1xy7w" path="res://assets/pixil-frame-4.png" id="1_xfw2k"]
+[ext_resource type="Texture2D" uid="uid://b7dy1tovk5k00" path="res://assets/pc_gamers/image.psd.svg" id="1_nur28"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i7cgo"]
-size = Vector2(15, 18)
+size = Vector2(147, 134)
 
-[node name="Node2D" type="Node2D"]
+[node name="Computador_Node" type="Node2D"]
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
-texture = ExtResource("1_xfw2k")
+texture = ExtResource("1_nur28")
 region_enabled = true
-region_rect = Rect2(52.972, 262.311, 17.8456, 19.7328)
+region_rect = Rect2(308, 531, 154.627, 139.087)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
-position = Vector2(-0.5, 0)
+position = Vector2(-2.5, -2)
 shape = SubResource("RectangleShape2D_i7cgo")
